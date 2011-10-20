@@ -1,0 +1,30 @@
+permalink:      /:title/
+paginate:       5
+
+exclude:
+  -README.markdown
+  -log/
+  -notes.markdown
+
+title:          Narrative Twist
+feed:           /atom.xml
+description:    "essays and commentary by christopher cabanillas"
+topics:         "design, typography, film, web, apple, futurism"    
+
+
+author:
+  name:         Christopher Cabanillas
+  email:        restiffbard@gmail.com
+  twitter:      restiffbard
+
+nav:
+    - name:     Blog
+      url:      /
+
+footer:
+    copyright:  "&copy; 2011 Christopher Cabanillas"
+
+css:
+  - /lib/text.css
+  - /lib/layout.css
+  - /lib/reconstruction.css

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Jekyll" />
+  <meta name="author" content="{{ site.author.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="keywords" content="{{ site.topics }}" />
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+  
+  {% for css in site.css %}
+    <link rel="stylesheet" href="{{ css }}" />
+  {% endfor %}
+  
+</head>
+  <body>
+    <div id="left">
+      {{ content }}
+    </div>
+
+    <div id="right">  
+      <header>
+        <hgroup>
+          <h1>
+            <a href="/">{{ site.title }}</a>
+          </h1>
+          <h2>by {{ site.author.name }}</h2>
+        </hgroup>
+      </header>
+    </div>
+
+    <footer>
+      <p class="archives"><a href="/archives/">archives</a></p>
+      <p class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}" title="on twitter">140</a></p>
+      <p class="copyright">{{ site.footer.copyright }}</p>
+    </footer>
+  </body>
+</html>

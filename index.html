@@ -1,0 +1,6 @@
+---
+layout: default
+---
+{% for post in paginator.posts limit:1 %}
+  {% include post.html %}
+{% endfor %}

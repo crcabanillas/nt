@@ -1,0 +1,24 @@
+body {
+	margin: 2em;
+  background-color: rgb(250,251,246);
+  width: 52em;
+}
+#left {
+	width: 35em;
+	float:left;
+  margin-bottom: 3em;
+}
+#right {
+	margin-left: 35em;
+  padding-left:2em;
+}
+#recent {
+  margin-top: 5em;
+}
+#recent ul {
+  padding: 0;
+  list-style-type: none;
+}
+#recent li {
+  margin: 0;
+}

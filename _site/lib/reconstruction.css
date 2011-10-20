@@ -1,0 +1,71 @@
+/* Reconstruction
+ * a rebuilding of restiffbard.com
+ * copyright 2011, Christopher Cabanillas
+ */
+
+article header {
+  margin-bottom: 0;
+}
+hgroup h1,h2 {
+  margin: 0em;
+}
+hgroup h2 {
+  text-transform: lowercase;
+}
+time {
+  border-top:0.1em solid rgb(230,230,230);
+  width:auto;
+  display: block;
+  text-align:right;
+  padding-right: 0.5em;
+  font-size: 0.8em;
+  color:rgb(190,190,190);
+}
+article footer {
+  border: none;
+  text-align:center;
+}
+footer {
+  text-align: right;
+  clear:both;
+}
+footer p {
+  margin:0;
+}
+p.archives {
+  text-align: left;
+  border-bottom: 0.3em solid rgb(230,230,230);
+}
+p.twitter {
+  float:left;
+  text-align: left;
+}
+p.copyright {
+  float: right;
+  text-align: right;
+}
+/* Colors */
+h2 {
+  color: rgb(127,127,127);
+}
+p {
+  color:rgb(63,63,63);
+}
+/* rulers */
+hr {
+  border-width: 0.1em;
+  border-style: solid;
+  margin: 0;
+  color: rgb(230,230,230);
+}
+/* archives */
+section time {
+  margin-bottom: 3em;
+}
+hgroup.archive {
+  border-bottom:0.1em solid rgb(230,230,230);
+}
+hgroup.archive_head {
+  border-bottom:0.5em solid rgb(230,230,230);
+  margin-bottom: 3em;
+}

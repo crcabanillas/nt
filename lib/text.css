@@ -1,0 +1,278 @@
+/* Typography */
+
+html {
+	height: 100%;
+	margin-bottom: .1em;
+}
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 100%;
+ 	line-height: 1.125em;
+}
+
+/* Headings */
+h1 {
+	font-weight: 100;
+	font-size: 1.875em;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+h2 {
+	font-weight: 100;
+	font-size: 1.25em;
+	font-family: Helvetica, sans-serif;
+}
+h3 {
+	font-weight: 100;
+	font-size: 1.125em;
+	font-family: Times, "Times New Roman", serif;
+}
+h4 {
+	font-weight: 100;
+	font-size: 1em;
+	font-family: Times, "Times New Roman", serif;
+}
+/* End Headings */
+
+/* Anchors */
+h2 a, h1 a {
+	color: rgb(063, 063, 063);
+	text-decoration: none;
+}
+p a, li a {
+	color: rgb(075, 146, 228);
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(054, 105, 164);
+}
+p a:hover, li a:hover {
+	color: rgb(251, 166, 019);
+	text-decoration: underline;
+}
+/* End Anchors */
+
+/* Text Elements */
+p {
+	font-size: 0.8125em;
+}
+blockquote {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+	background: rgb(230, 230, 230);
+	padding: 1em;
+}
+cite {
+	font-size: .8em;
+	font-weight: 700;
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	float: right;
+	margin-top: 1em;
+}
+	cite:before {
+		content: "\2014";
+	}
+img {
+	padding: .5em;
+	border: .1em solid rgb(191,191,191);
+	background: rgb(230, 230, 230);
+	border: .1em solid rgb(250, 251, 246);
+}
+code {
+	font-family: "Panic Sans", Consolas, Courier, "Courier New", monospace;
+	font-size: 1.1em;
+	color: rgb(010, 176, 045);
+}
+q {
+	color: rgb(125, 011, 007);
+}
+q:before {
+	content: "\201C";
+}
+q:after {
+	content: "\201D";
+}
+acronym {
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+abbr {
+}
+abbr:after {
+	content: ".";
+}
+strong {
+	font-weight: 700;
+	color: rgb(30,30,30);
+}
+em {
+	color: rgb(165, 133, 056);
+	font-style: italic;
+}
+b {
+	font-weight: 700;
+}
+i {
+	font-style: italic;
+}
+/* End Text Elements */
+
+
+/* Indenting */
+.entry div.clear + p:before {
+	content: "\2761";
+/*	padding-right: .2em;*/
+}
+.entry h1 + p:before {
+	content: "\2761";
+	padding-right: .25em;
+}
+/*.entry h2 + p:before {
+	content: "\2761";
+	padding-right: .25em;
+}*/
+.entry p + p, .entry blockquote + p, .entry ol + p, .entry ul + p, .entry div + p  {
+	text-indent: 1.125em;
+}
+.entry div.clear + p {
+	text-indent: 0;
+}
+.entry h2 {
+  margin-left: -0.9em;
+}
+.entry h2:before {
+	content: "\00A7";
+	padding-right: .25em;
+}
+/* End Indenting */
+
+
+/* Lists */
+ul {
+	font-size: 0.8125em;
+}
+ol {
+	font-size: 0.8125em;
+}
+li {
+	margin-left:1em;
+}
+/* End Lists */
+
+
+/* Definitions */
+dl {
+	font-size: .8125em;
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 38em;
+	background: rgb(230, 230, 230);
+	padding: 1em;
+}
+dt {
+	font-weight: bold;
+	margin-top: 1em;
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+}
+dd {
+	padding-bottom: 5px;
+}
+	dd.def_cite {
+		font-style: italic;
+		text-align: right;
+	}
+	dd.def_cite:before {
+		content: "\2014";
+	}
+dl dt:first-child {
+	margin-top: 0;
+}
+.ipa { 			/* for styling the IPA pronunciation in a definition */
+	font-weight: normal;
+	font-family: Verdana, sans-serif;
+}
+.use { 			/* for styling a use case in a definition */
+	font-family: Cambria, Georgia, serif;
+	font-weight: bold;
+	font-style: italic;
+}
+.part { 		/* for styling the part of speech in a definition */
+	margin-left: 2px;
+}
+/* End Definitions */
+
+
+/* Classes */
+
+.left {
+	float: left;
+}
+	.left p {
+		width: auto;
+	}
+.right {
+	float: right;
+}
+	.right p {
+		width: auto;
+	}
+.clear {
+	clear:both;
+}
+.center {
+	clear: both;
+	text-align: center;
+}
+.caption { 				/* for images */
+	font-size: .7em;
+	font-weight: 700;
+	font-style: italic;
+	padding-top: .5em;
+}
+.image {
+	margin: .5em 1em .5em 1em;
+}
+	.image p {
+		padding-left: 1em;
+		margin: 0 auto 0 auto;
+		width: auto;
+	}
+.center p {
+/*	padding: auto;*/
+	text-align:center;
+}
+/* Sidenotes */
+.sidenote p {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 1em;
+	line-height: 1.25em;
+	margin: 0 .5em 0 .5em;
+	width: 10em;
+}
+	.sidenote cite {
+		float: none;
+	}
+div[class~=left].sidenote {
+	border-right: solid .4em rgb(191,191,191);
+	padding-right: .5em;
+	margin-right: 1em;
+}
+div[class~=right].sidenote {
+	border-left: solid .4em rgb(191,191,191);
+	padding-left: .5em;
+	margin-left: 1em;
+}
+
+/* End Classes */
+
+/*
+captions for lists, images
+	fig. 1, list 3, etc...
+*/
