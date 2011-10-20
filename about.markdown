@@ -4,6 +4,7 @@ permalink:  /about/
 title:      About Me
 ---
 
-h2. About Me
+About Me
+--------
 
 See http://narrativetwist.com
